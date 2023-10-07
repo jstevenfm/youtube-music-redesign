@@ -1,0 +1,28 @@
+---
+import Navbar from "./Navbar.astro";
+
+---
+
+<header class="flex p-2 justify-between items-center">
+  <div class="flex items-center">
+    <Navbar></Navbar>
+    <a class="" href="/">
+      <img
+        class="w-28 h-8 ml-3"
+        src="../../src/assets/on_platform_logo_dark.svg"
+        alt="YouTube Music Icon"
+      />
+    </a>
+  </div>
+  <div class="flex items-center">
+    <a class="mr-3">
+      <input class="hidden" type="search" name="search" id="search" />
+      <label class="cursor-pointer" for="search">
+        <img src="../../src/assets/search.svg" alt="Search Icon" />
+      </label>
+    </a>
+    <button>
+      <img src="../../src/assets/account_circle.svg" alt="" />
+    </button>
+  </div>
+</header>

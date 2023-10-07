@@ -1,0 +1,20 @@
+---
+interface Props {
+  srcImgAlbum: string;
+  titleAlbum: string;
+  artistAlbum: string;
+  yearAlbum: string;
+}
+
+const { srcImgAlbum, titleAlbum, artistAlbum, yearAlbum } = Astro.props;
+---
+
+<article class="bg-white/50 rounded-xl p-3 w-36 truncate">
+  <img class="w-32 rounded-md" src={srcImgAlbum} alt="Cover Song" />
+  <h3 class="font-medium truncate pt-3">{titleAlbum}</h3>
+  <div class="truncate flex gap-1 text-white/70">
+    <p class="">{artistAlbum}</p>
+    <span class="truncate">|</span>
+    <p class="truncate">{yearAlbum}</p>
+  </div>
+</article>

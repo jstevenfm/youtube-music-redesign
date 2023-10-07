@@ -1,0 +1,19 @@
+
+<input class="hidden" type="checkbox" name="menu" id="menu" />
+<label class="menu_btn cursor-pointer" for="menu">
+  <img src="../../src/assets/menu.svg" alt="Menu" />
+  <img
+    class="hidden"
+    src="../../src/assets/close-menu.svg"
+    alt="Menu Close"
+  />
+</label>
+
+<style>
+  #menu:checked + .menu_btn > img {
+    @apply hidden;
+  }
+  #menu:checked + .menu_btn > img:nth-child(2) {
+    @apply block;
+  }
+</style>

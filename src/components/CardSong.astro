@@ -1,0 +1,17 @@
+---
+interface Props {
+  srcImgSong: string;
+  titleSong: string;
+  artistSong: string;
+}
+
+const { srcImgSong, titleSong, artistSong } = Astro.props;
+---
+
+<article class="bg-white/50 rounded-xl flex items-center ">
+  <img class="rounded-xl w-16" src={srcImgSong} alt="Cover Song" />
+  <div class="mx-3 truncate">
+    <h3 class="font-medium truncate">{titleSong}</h3>
+    <p class="text-white/70 truncate">{artistSong}</p>
+  </div>
+</article>

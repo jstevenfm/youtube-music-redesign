@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import CardSong from "../components/CardSong.astro";
 import AlbumCard from "../components/AlbumCard.astro";
+import SongPlay from "../components/SongPlay.astro";
 ---
 
 <Layout title="YouTube Music">
@@ -48,41 +49,44 @@ import AlbumCard from "../components/AlbumCard.astro";
       <div class="grid grid-cols-3 gap-5 px-5 overflow-y-auto">
         <AlbumCard
           srcImgAlbum="../../src/assets/Måneskin_-_Il_ballo_della_vita.png"
-					titleAlbum="Il ballo della vita"
-					artistAlbum="Måneskin"
-					yearAlbum="2018"
+          titleAlbum="Il ballo della vita"
+          artistAlbum="Måneskin"
+          yearAlbum="2018"
         />
         <AlbumCard
           srcImgAlbum="../../src/assets/Beyoncé_-_Renaissance.png"
-					titleAlbum="Renaissance"
-					artistAlbum="Beyoncé"
-					yearAlbum="2022"
+          titleAlbum="Renaissance"
+          artistAlbum="Beyoncé"
+          yearAlbum="2022"
         />
         <AlbumCard
           srcImgAlbum="../../src/assets/Live_at_SoFi_Stadium.jpg"
-					titleAlbum="Live at SoFi Stadium"
-					artistAlbum="The Weeknd"
-					yearAlbum="2023"
+          titleAlbum="Live at SoFi Stadium"
+          artistAlbum="The Weeknd"
+          yearAlbum="2023"
         />
         <AlbumCard
           srcImgAlbum="../../src/assets/Måneskin_-_Teatro_d'ira_Vol._1.png"
-					titleAlbum="Teatro d'ira: Vol. I"
-					artistAlbum="Måneskin"
-					yearAlbum="2021"
+          titleAlbum="Teatro d'ira: Vol. I"
+          artistAlbum="Måneskin"
+          yearAlbum="2021"
         />
         <AlbumCard
           srcImgAlbum="../../src/assets/The_Weeknd_-_After_Hours.png"
-					titleAlbum="Il ballo della vita"
-					artistAlbum="The Weeknd"
-					yearAlbum="2020"
+          titleAlbum="Il ballo della vita"
+          artistAlbum="The Weeknd"
+          yearAlbum="2020"
         />
         <AlbumCard
           srcImgAlbum="../../src/assets/1920px-Beyoncé_-_Beyoncé.svg.png"
-					titleAlbum="Beyoncé"
-					artistAlbum="Beyoncé"
-					yearAlbum="2013"
+          titleAlbum="Beyoncé"
+          artistAlbum="Beyoncé"
+          yearAlbum="2013"
         />
       </div>
+    </section>
+    <section>
+      <SongPlay />
     </section>
   </main>
 </Layout>
